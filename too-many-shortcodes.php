@@ -206,7 +206,7 @@ function tmsc_spam_comments() {
 	return $before . count( get_comments( 'status=spam' ) ) . $after;
 }
 
-function tmsc_anchor() {
+function tmsc_anchor( $content ) {
    	return '<a name="' . $content . '" />';
 }
 
