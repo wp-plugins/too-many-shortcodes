@@ -197,7 +197,7 @@ function tmsc_html_comment( $atts, $content = null ) {
 	   	return '<!-- ' . $content . ' -->';
 }
 
-function tmsc_spam_comments() {
+function tmsc_spam_comments( $atts ) {
 	extract( shortcode_atts( array( // extract arguments
 		'before' => NULL, 
 		'after' => NULL,
@@ -206,8 +206,11 @@ function tmsc_spam_comments() {
 	return $before . count( get_comments( 'status=spam' ) ) . $after;
 }
 
-function tmsc_anchor( $content ) {
-   	return '<a name="' . $content . '" />';
+function tmsc_anchor( $atts, $content ) {
+	extract( shortcode_atts( array( // extract arguments
+		'name' => NULL, 
+	), $atts ) );
+   	return '<a name="' . $name . '">' . $content . ' </a>';
 }
 
 // HOOKS AND FILTERS
