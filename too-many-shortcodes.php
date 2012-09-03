@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Too Many Shortcodes
-Plugin URI: http://wikiduh.com/plugins/too-many-shortcodes
+Plugin URI: http://shinraholdings.com/plugins/too-many-shortcodes
 Description: All of your shortcodes on one settings page, view or change the trigger text, enable or disable individual shortcodes, see the optional arguments and explaination links for each shortcode. Shortcodes added with every update.
 Version: 1.1.0
 Author: bitacre
-Author URI: http://wikiduh.com
+Author URI: http://shinraholdings.com
 License: GPLv2 
-	Copyright 2012 bitacre (plugins@wikiduh.com)
+	Copyright 2012 Shinra Web Holdings (plugins@shinraholdings.com)
 */
 
 function tmsc_default_options() {
@@ -125,7 +125,7 @@ function tmsc_draw_options_page() {
 			<?php settings_fields( 'too-many-shortcodes-options-group' ); ?>
 						
 			<!-- Description -->
-			<p style="font-size:0.95em">You are using version 1.1.0 of the <a href="http://wikiduh.com/plugins/too-many-shortcodes">Too Many Shortcodes</a> plugin, with support for <?php echo count( $options); ?> shortcodes. You may change the triggers for these shortcodes or add more (seperated by a space) in the text boxes; or disable them completely by unchecking the box. Click the <a href="http://wikiduh.com/plugins/too-many-shortcodes" target="_blank">help</a> link next to a shortcode to read more about it (opens in a new tab/window). Please post requests for additional shortcodes to the <a href="http://wikiduh.com/plugins/too-many-shortcodes#comments" target="_blank">comments</a> section of this plugin's homepage.</p>
+			<p style="font-size:0.95em">You are using version 1.1.0 of the <a href="http://shinraholdings.com/plugins/too-many-shortcodes">Too Many Shortcodes</a> plugin, with support for <?php echo count( $options); ?> shortcodes. You may change the triggers for these shortcodes or add more (seperated by a space) in the text boxes; or disable them completely by unchecking the box. Click the <a href="http://shinraholdings.com/plugins/too-many-shortcodes" target="_blank">help</a> link next to a shortcode to read more about it (opens in a new tab/window). Please post requests for additional shortcodes to the <a href="http://shinraholdings.com/plugins/too-many-shortcodes#comments" target="_blank">comments</a> section of this plugin's homepage.</p>
 			
 			<table class="form-table">
 				<tr valign="middle">
@@ -162,7 +162,7 @@ function tmsc_draw_options_line( $slug, $trigger, $description, $the_args, $enab
 					<td><input type="text" name="too-many-shortcodes-options[<?php echo $slug; ?>][trigger]" class="form-text" value="<?php echo $trigger; ?>" /></td>
 					<td scope="row"><?php echo $description; ?><input type="hidden" name="too-many-shortcodes-options[<?php echo $slug; ?>][description]" value="<?php echo $description; ?>" /></td>
 					<td><?php echo $the_args; ?><input type="hidden" name="too-many-shortcodes-options[<?php echo $slug; ?>][args]" value="<?php echo $the_args; ?>" /></td>
-					<td><span style="font-size:0.9em;"><a href="http://wikiduh.com/plugins/too-many-shortcodes/help#<?php echo $slug; ?>"><input type="hidden" name="too-many-shortcodes-options[<?php echo $slug; ?>][slug]" value="<?php echo $slug; ?>" />view</a></span></td>
+					<td><span style="font-size:0.9em;"><a href="http://shinraholdings.com/plugins/too-many-shortcodes/help#<?php echo $slug; ?>"><input type="hidden" name="too-many-shortcodes-options[<?php echo $slug; ?>][slug]" value="<?php echo $slug; ?>" />view</a></span></td>
 					<td><input type="checkbox" name="too-many-shortcodes-options[<?php echo $slug; ?>][enabled]" value="1"<?php checked( $enabled ); ?>/></td>
 				</tr>
 
