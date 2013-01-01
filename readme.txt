@@ -4,7 +4,7 @@ Contributors: bitacre
 Donate link: http://shinraholdings.com/donate
 Tags: shortcode, echo, display, too, many, too many, theme, themes, function, short code,
 Requires at least: 2.8
-Tested up to: 3.4.2
+Tested up to: 3.5
 Stable tag: 1.1.0
 
 All of your shortcodes on one settings page.
