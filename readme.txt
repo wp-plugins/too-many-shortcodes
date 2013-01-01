@@ -4,7 +4,7 @@ Contributors: bitacre
 Donate link: http://shinraholdings.com/donate
 Tags: shortcode, echo, display, too, many, too many, theme, themes, function, short code,
 Requires at least: 2.8
-Tested up to: 3.4.1
+Tested up to: 3.5
 Stable tag: 1.1.0
 
 All of your shortcodes on one settings page.
@@ -20,11 +20,17 @@ View or change the trigger text, enable or disable individual shortcodes, see th
 3. Activate 'Too Many Shortcodes' on the 'Plugins' menu in WordPress.
 
 == Changelog ==
+= 1.1.1 =
+* added [pluginlink], shortcode for displaying links to other hosted WP plugins
+
 = 1.1.0 =
 * First released version.
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+= 1.1.1 =
+Not a critical upgrade, just adds a shortcode.
+
 = 1.1.0 =
 First release, no upgrade notice (included to make the WordPress readme.txt validator happy).
 
